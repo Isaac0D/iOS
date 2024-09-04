@@ -17,8 +17,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func queHacerPulsarBoton(_ sender: Any) {
-        textiCambiar.text = "Bienvenido"
+   
+    @IBAction func queHacerPulsarBoton(_ sender: UIButton) {
+        //textiCambiar.text = "Bienvenido"
+        textiCambiar.text = sender.titleLabel!.text ?? "Nosupe"
     }
     
     

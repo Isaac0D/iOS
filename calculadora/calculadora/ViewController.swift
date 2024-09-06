@@ -8,29 +8,41 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var botonParaInteractuar: UIButton!
+    
     @IBOutlet weak var textiCambiar: UILabel!
+    @IBOutlet weak var botonOperacion: UIButton!
+    
+    var botones_interfaz: Dictionary<String, IUBotonCalculadora> = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        inicializarCalculadora()
     }
     
-   
+    
+    
+    
     @IBAction func queHacerPulsarBoton(_ sender: UIButton) {
-        //textiCambiar.text = "Bienvenido"
-        textiCambiar.text = sender.titleLabel!.text ?? "Nosupe"
+        let textoAñadir =
+        botones_interfaz[(sender.restorationIdentifier ?? botonOperacion.restorationIdentifier) ?? "boton"]?.numero
+        textiCambiar.text = "\(textiCambiar.text ?? "")\(textoAñadir!)"
+       
+
     }
     
+    func inicializarCalculadora() -> Void{
+        crearArregloBotones()
+    }
     
-    
-    
-    
-    
+    func crearArregloBotones() -> Void{
+        for numero in 0...9{
+            botones_interfaz["boton\(numero)"] = IUBotonCalculadora(
+                    "boton\(numero)",
+                    numero: Character("\(numero)"),
+                    operacion: ""
+            )
+            
+        }
+    }
 }
-
-
-
-
-

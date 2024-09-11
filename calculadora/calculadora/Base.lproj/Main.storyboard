@@ -104,6 +104,9 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="Op">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="botonEscogerOperacion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="isq-7S-zHy"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -173,6 +176,7 @@
                     <connections>
                         <outlet property="botonOperacion" destination="Bhs-kN-oGS" id="NIu-Nr-I0l"/>
                         <outlet property="textiCambiar" destination="MKm-qc-KWo" id="twI-wE-sxI"/>
+                        <outlet property="vistaStack" destination="K95-JN-tNx" id="84i-ma-fD0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

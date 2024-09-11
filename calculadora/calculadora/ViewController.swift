@@ -19,6 +19,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var textiCambiar: UILabel!
     @IBOutlet weak var botonOperacion: UIButton!
     
+    @IBOutlet weak var vistaStack: UIStackView!
+    
+    
     var botones_interfaz: Dictionary<String, IUBotonCalculadora> = [:]
     var operacionActual: String? = nil
     
@@ -33,13 +36,15 @@ class ViewController: UIViewController {
     
     @IBAction func queHacerPulsarBoton(_ sender: UIButton) {
         if(estadoActual == estadosDeLaCalculadora.seleccionarNumeros){
-            let textoAñadir =
-            botones_interfaz[(sender.restorationIdentifier ?? botonOperacion.restorationIdentifier) ?? "boton"]?.numero
-            textiCambiar.text = "\(textiCambiar.text ?? "")\(textoAñadir!)"
+            if let _mensajeroId = sender.restorationIdentifier{
+                let textoCache = botones_interfaz[_mensajeroId]?.numero
+                textiCambiar.text = "\(textiCambiar.text ?? "")\(textoCache!)"
+            }
         }
         else if (estadoActual == estadosDeLaCalculadora.escogerOperacion){
-            if let _mensajero: UIButton? = sender{
-                operacionActual = botones_interfaz[_mensajero!.restorationIdentifier ?? "boton0"]?.operacion
+            if let _mensajeroId = sender.restorationIdentifier{
+                operacionActual = botones_interfaz[_mensajeroId]?.operacion
+                estadoActual = estadosDeLaCalculadora.seleccionarNumeros
             }
             else{
                 operacionActual = nil
@@ -47,11 +52,15 @@ class ViewController: UIViewController {
          
         }
         
+        dibujarNumerosOperacionInterfaz()
+        
        
 
     }
     
     @IBAction func botonEscogerOperacion(_ sender: UIButton){
+        //botonOperacion.setTitle("ñ", for: .normal)
+        //print(botonOperacion.titleLabel?.text)
         if(estadoActual == estadosDeLaCalculadora.seleccionarNumeros){
             estadoActual = estadosDeLaCalculadora.escogerOperacion
             dibujarNumerosOperacionInterfaz()
@@ -60,18 +69,46 @@ class ViewController: UIViewController {
     
     func inicializarCalculadora() -> Void{
         crearArregloBotones()
+        identificarBotones()
     }
     
     func crearArregloBotones() -> Void{
-        botones_interfaz = IUBotonCalculadora.crearArregloBotones(  )
+        botones_interfaz = IUBotonCalculadora.crearArregloBotones()
     }
     
     func dibujarNumerosOperacionInterfaz(){
         if(estadoActual == estadosDeLaCalculadora.escogerOperacion){
+            for elemento in botones_interfaz.values{
+                elemento.referenciaABotonInterfaz?.setTitle(elemento.operacion, for: .normal)
+            }
             
         }
         else if(estadoActual == estadosDeLaCalculadora.seleccionarNumeros){
-            
+            for elemento in botones_interfaz.values{
+                elemento.referenciaABotonInterfaz?.setTitle(String(elemento.numero), for: .normal)
+            }
         }
+    }
+    
+    func identificarBotones(){
+        
+        for pilaDeComponentes in vistaStack.subviews{
+            for boton in pilaDeComponentes.subviews{
+                if let identificador = boton.restorationIdentifier{
+                    //print(botones_interfaz[identificador])
+                    botones_interfaz[identificador]?.referenciaABotonInterfaz = boton as? UIButton
+                }
+            }
+        }
+        
+        for elemento in botones_interfaz.values{
+            elemento.referenciaABotonInterfaz?.setTitle("ñ", for: .normal)
+        }
+        
+        /*for stackConVista in vistaStack.subviews{
+            for boton in stackConVista.subviews{
+                print(boton.restorationIdentifier)
+            }
+        }*/
     }
 }

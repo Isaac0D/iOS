@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     
     var botones_interfaz: Dictionary<String, IUBotonCalculadora> = [:]
     var operacionActual: String? = nil
+    var numeroAnterior: Double = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,9 +42,25 @@ class ViewController: UIViewController {
                 textiCambiar.text = "\(textiCambiar.text ?? "")\(textoCache!)"
             }
         }
+        
+        else if(estadoActual == estadosDeLaCalculadora.mostrarResultado){
+            if let _mensajeroId = sender.restorationIdentifier{
+                let textoCache = botones_interfaz[_mensajeroId]?.numero
+                textiCambiar.text = "\(textoCache!)"
+                estadoActual = estadosDeLaCalculadora.seleccionarNumeros
+            }
+        }
+        
         else if (estadoActual == estadosDeLaCalculadora.escogerOperacion){
             if let _mensajeroId = sender.restorationIdentifier{
+                
                 operacionActual = botones_interfaz[_mensajeroId]?.operacion
+                
+                if let numeroActual: String = textiCambiar.text{
+                    numeroAnterior = Double(numeroActual) ?? 0.0
+                }
+                
+                textiCambiar.text = ""
                 estadoActual = estadosDeLaCalculadora.seleccionarNumeros
             }
             else{
@@ -59,12 +76,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func botonEscogerOperacion(_ sender: UIButton){
-        //botonOperacion.setTitle("ñ", for: .normal)
-        //print(botonOperacion.titleLabel?.text)
         if(estadoActual == estadosDeLaCalculadora.seleccionarNumeros){
             estadoActual = estadosDeLaCalculadora.escogerOperacion
-            dibujarNumerosOperacionInterfaz()
+            
+        }else if(estadoActual == estadosDeLaCalculadora.escogerOperacion){
+            estadoActual = estadosDeLaCalculadora.seleccionarNumeros
         }
+        dibujarNumerosOperacionInterfaz()
     }
     
     func inicializarCalculadora() -> Void{
@@ -95,20 +113,41 @@ class ViewController: UIViewController {
         for pilaDeComponentes in vistaStack.subviews{
             for boton in pilaDeComponentes.subviews{
                 if let identificador = boton.restorationIdentifier{
-                    //print(botones_interfaz[identificador])
                     botones_interfaz[identificador]?.referenciaABotonInterfaz = boton as? UIButton
                 }
             }
         }
         
-        for elemento in botones_interfaz.values{
-            elemento.referenciaABotonInterfaz?.setTitle("ñ", for: .normal)
-        }
         
-        /*for stackConVista in vistaStack.subviews{
-            for boton in stackConVista.subviews{
-                print(boton.restorationIdentifier)
+    }
+    
+    
+    @IBAction func obtenerResultado(_ sender: Any) {
+        if numeroAnterior != 0.0 && textiCambiar.text != ""{
+            var numeroActual: Double = 0.0
+            if let numeroActualString = textiCambiar.text{
+                numeroActual = Double(numeroActualString) ?? 0.0
             }
-        }*/
+            
+            switch(operacionActual){
+                
+            case "+":
+                textiCambiar.text = "\(numeroAnterior + numeroActual)"
+                
+            case "-":
+                textiCambiar.text = "\(numeroAnterior - numeroActual)"
+            
+            case "*":
+                textiCambiar.text = "\(numeroAnterior * numeroActual)"
+                
+            case "/":
+                textiCambiar.text = "\(numeroAnterior / numeroActual)"
+                
+            default:
+                textiCambiar.text = "Error"
+            }
+            
+            estadoActual = estadosDeLaCalculadora.mostrarResultado
+        }
     }
 }

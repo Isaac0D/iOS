@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB66F6E02CA462A100B97202 /* ControladorCita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66F6DF2CA462A100B97202 /* ControladorCita.swift */; };
+		FB66F6E22CA4678D00B97202 /* ControladorPantallaCitas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66F6E12CA4678D00B97202 /* ControladorPantallaCitas.swift */; };
 		FBED7A742C9DC9FE00BC4E65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED7A732C9DC9FE00BC4E65 /* AppDelegate.swift */; };
 		FBED7A762C9DC9FE00BC4E65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED7A752C9DC9FE00BC4E65 /* SceneDelegate.swift */; };
 		FBED7A782C9DC9FE00BC4E65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED7A772C9DC9FE00BC4E65 /* ViewController.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB66F6DF2CA462A100B97202 /* ControladorCita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorCita.swift; sourceTree = "<group>"; };
+		FB66F6E12CA4678D00B97202 /* ControladorPantallaCitas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorPantallaCitas.swift; sourceTree = "<group>"; };
 		FBED7A702C9DC9FE00BC4E65 /* boceto1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boceto1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBED7A732C9DC9FE00BC4E65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBED7A752C9DC9FE00BC4E65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB66F6DE2CA4628500B97202 /* controladoresDeVistas */ = {
+			isa = PBXGroup;
+			children = (
+				FB66F6DF2CA462A100B97202 /* ControladorCita.swift */,
+				FB66F6E12CA4678D00B97202 /* ControladorPantallaCitas.swift */,
+			);
+			path = controladoresDeVistas;
+			sourceTree = "<group>";
+		};
 		FBED7A672C9DC9FE00BC4E65 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +116,7 @@
 		FBED7A722C9DC9FE00BC4E65 /* boceto1 */ = {
 			isa = PBXGroup;
 			children = (
+				FB66F6DE2CA4628500B97202 /* controladoresDeVistas */,
 				FBED7AA42C9DCA9700BC4E65 /* modelo */,
 				FBED7AA32C9DCA8C00BC4E65 /* controlador */,
 				FBED7A732C9DC9FE00BC4E65 /* AppDelegate.swift */,
@@ -282,9 +296,11 @@
 			files = (
 				FBED7A782C9DC9FE00BC4E65 /* ViewController.swift in Sources */,
 				FBED7AA82C9DCB8D00BC4E65 /* Cita.swift in Sources */,
+				FB66F6E02CA462A100B97202 /* ControladorCita.swift in Sources */,
 				FBED7AA62C9DCAB700BC4E65 /* generadorDeCitas.swift in Sources */,
 				FBED7A742C9DC9FE00BC4E65 /* AppDelegate.swift in Sources */,
 				FBED7A762C9DC9FE00BC4E65 /* SceneDelegate.swift in Sources */,
+				FB66F6E22CA4678D00B97202 /* ControladorPantallaCitas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

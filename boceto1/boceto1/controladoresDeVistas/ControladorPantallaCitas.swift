@@ -1,10 +1,3 @@
-//
-//  ControladorPantallaCitas.swift
-//  boceto1
-//
-//  Created by alumno on 9/25/24.
-//
-
 import UIKit
 
 class ControladorPantallaCitas: UIViewController{

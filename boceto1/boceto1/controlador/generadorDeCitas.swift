@@ -32,5 +32,13 @@ class GeneradorDeCitas{
         )
     }
     
+    func obtenerCitaAleatoria() -> Cita{
+        var citaParaRegresar : Cita
+        citaParaRegresar = citasCreadas[Int.random(in: 0...citasCreadas.count-1)]
+
+        return citaParaRegresar
+        
+    }
+    
     
 }

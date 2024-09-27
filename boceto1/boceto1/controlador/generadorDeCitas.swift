@@ -8,26 +8,30 @@ class GeneradorDeCitas{
         citasCreadas = []
     }
     
-    func agregarCita(_ queDijo: String, quienLoDijo: String){
-        var citaGenerada = Cita(quienLoDijo: quienLoDijo, queDijo: queDijo)
+    func agregarCitaManual(_ queDijo: String, quienLoDijo: String){
+        let citaGenerada = Cita(quienLoDijo: quienLoDijo, queDijo: queDijo)
         
         citasCreadas.append(citaGenerada)
     }
     
+    func agregarCita(_ citaNueva: Cita){
+        citasCreadas.append(citaNueva)
+    }
+    
     func generarCitasFalsas(){
-        self.agregarCita("En las sombras, donde la oscuridad es mi única compañera, guardo un secreto explosivo. Un poder que podría cambiar el mundo, si tan solo tuviera el valor de liberarlo",
+        self.agregarCitaManual("En las sombras, donde la oscuridad es mi única compañera, guardo un secreto explosivo. Un poder que podría cambiar el mundo, si tan solo tuviera el valor de liberarlo",
                      quienLoDijo: "Creeper"
         )
         
-        self.agregarCita("¡La vida es corta, ¡explota al máximo!",
+        self.agregarCitaManual("¡La vida es corta, ¡explota al máximo!",
                           quienLoDijo: "Creeper"
         )
         
-        self.agregarCita("GRrrrrr grrr grrr GRRRRR grrrgGRGRh",
+        self.agregarCitaManual("GRrrrrr grrr grrr GRRRRR grrrgGRGRh",
                           quienLoDijo: "Zombie"
         )
         
-        self.agregarCita("Solia ser un explorador como tu... Pero me dieron con una flecha en la rodilla",
+        self.agregarCitaManual("Solia ser un explorador como tu... Pero me dieron con una flecha en la rodilla",
                           quienLoDijo: "Guardia"
         )
     }

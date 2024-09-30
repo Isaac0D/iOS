@@ -25,9 +25,15 @@ class ViewController: UIViewController {
 
     
     @IBAction func volverPantallaInicio(segue: UIStoryboardSegue){
+        
         if let pantallaAgregarCitas = segue.source as? ControladorPantallaAgregarCita{
-            citasDisponibles.agregarCita(pantallaAgregarCitas.citaCreada!)
+            
+            if pantallaAgregarCitas.citaCreada != nil{
+                self.citasDisponibles.agregarCita(pantallaAgregarCitas.citaCreada!)
+            }
+            
         }
+        
         
         /*let pantallaCitas = segue.source as? ControladorPantallaCitas
         print(pantallaCitas?.citaActual.texto)

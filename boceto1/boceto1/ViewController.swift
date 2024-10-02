@@ -31,7 +31,7 @@ class ViewController: UIViewController {
             if pantallaAgregarCitas.citaCreada != nil{
                 self.citasDisponibles.agregarCita(pantallaAgregarCitas.citaCreada!)
             }
-            
+        
         }
         
         

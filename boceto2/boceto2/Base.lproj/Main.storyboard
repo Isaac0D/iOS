@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GPQ-Qe-OCC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GPQ-Qe-OCC">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -12,7 +12,7 @@
         <!--Mod navegador principal-->
         <scene sceneID="vhs-0b-BPl">
             <objects>
-                <navigationController id="GPQ-Qe-OCC" customClass="mod_navegador_principal" customModule="boceto_2_CellView" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="GPQ-Qe-OCC" customClass="mod_navegador_principal" customModule="boceto2" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9I7-yJ-mqT">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -29,7 +29,7 @@
         <!--Para mostrar Cuadros-->
         <scene sceneID="txw-aC-SQC">
             <objects>
-                <collectionViewController title="Para mostrar Cuadros" id="umP-5f-skc" customClass="ControladorPantallaPrincipalDeColeccion" customModule="boceto_2_CellView" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController title="Para mostrar Cuadros" id="umP-5f-skc" customClass="ControladorPantallaPrincipalDeColeccion" customModule="boceto2" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="0EE-Nu-9GF">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,7 +41,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" layoutMarginsFollowReadableWidth="YES" reuseIdentifier="celda_pantalla_principal" id="ygo-xD-CVS" customClass="VistaDeZelda" customModule="boceto_2_CellView" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" layoutMarginsFollowReadableWidth="YES" reuseIdentifier="celda_pantalla_principal" id="ygo-xD-CVS" customClass="VistaDeZelda" customModule="boceto2" customModuleProvider="target">
                                 <rect key="frame" x="71.666666666666671" y="0.0" width="250" height="244"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vyS-IV-bMS">
@@ -74,7 +74,7 @@
                                         <constraint firstAttribute="trailing" secondItem="923-4K-uXU" secondAttribute="trailing" id="ybA-6c-dvq"/>
                                     </constraints>
                                 </collectionViewCellContentView>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <color key="backgroundColor" red="0.84258943796157837" green="0.44961288604129079" blue="0.38432270300799753" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <size key="customSize" width="250" height="244"/>
                                 <connections>
                                     <outlet property="cuerpo" destination="InC-77-18a" id="jzf-ic-Wla"/>
@@ -117,7 +117,7 @@
         <!--Controlador Pantalla Del Post-->
         <scene sceneID="Szo-G6-gZz">
             <objects>
-                <viewController storyboardIdentifier="PantallaPublicacion" id="A5r-Vd-TiS" customClass="ControladorPantallaDelPost" customModule="boceto_2_CellView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PantallaPublicacion" id="A5r-Vd-TiS" customClass="ControladorPantallaDelPost" customModule="boceto2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dh6-28-XDE">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -137,7 +137,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

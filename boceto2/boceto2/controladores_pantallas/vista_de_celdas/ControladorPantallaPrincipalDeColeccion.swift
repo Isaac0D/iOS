@@ -16,7 +16,15 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
     override func viewDidLoad(){
         super.viewDidLoad()
         
-        let ubicacion = URL(string: url_de_publicaciones)!
+        proveedor_publicaciones.obtener_publicaicones{
+            [weak self] (publicaciones) in self?.lista_de_publicaciones = publicaciones
+            DispatchQueue.main.async {
+                self?.collectionView.reloadData()
+            }
+        }
+        
+        
+        /*let ubicacion = URL(string: url_de_publicaciones)!
         URLSession.shared.dataTask(with: ubicacion) {
                 (datos, respuesta, error) in do {
                     if let publicaciones_recibidas = datos{
@@ -33,7 +41,7 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
                 } catch {
                     print("Error")
                 }
-        }.resume()
+        }.resume()*/
         
         /*
         proveedor_publicaciones.obtener_publicaicones{
@@ -96,7 +104,7 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
         
         self.navigationController?.pushViewController(pantalla_de_publicacion, animated: true)
         
-        print(self.navigationController)
+        //print(self.navigationController)
 
     }
 

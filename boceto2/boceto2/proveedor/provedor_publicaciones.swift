@@ -61,5 +61,43 @@ class ProveedorDePublicaciones{
             URLSession.shared.dataTask(with: ubicacion) {
                 (datos, respuesta, error) in do {}
             }.resume()
-        }
+    }
+    
+    func obtener_usuario(id: Int, que_hacer_al_recibir: @escaping (Usuario) -> Void) {
+          /// Acmodamos la url para descargar en esta funcion los post directamente
+          let ubicacion = URL(string: "\(url_de_publicaciones)users/\(id)")!
+          URLSession.shared.dataTask(with: ubicacion) {
+                  (datos, respuesta, error) in do {
+                      if let publicaciones_recibidas = datos{
+                          let prueba_de_interpretacion_de_datos = try JSONDecoder().decode(Usuario.self, from: publicaciones_recibidas)
+                          
+                          que_hacer_al_recibir(prueba_de_interpretacion_de_datos)
+                      }
+                      else {
+                          print(respuesta)
+                      }
+                  } catch {
+                      print("Error :)")
+                  }
+          }.resume()
+      }
+    
+    func obtener_comentarios_en_publicacion(id: Int, que_hacer_al_recibir: @escaping ([Comentario]) -> Void) {
+        /// Acmodamos la url para descargar en esta funcion los post directamente
+        let ubicacion = URL(string: "\(url_de_publicaciones)posts/\(id)/comments")!
+        URLSession.shared.dataTask(with: ubicacion) {
+                (datos, respuesta, error) in do {
+                    if let publicaciones_recibidas = datos{
+                        let prueba_de_interpretacion_de_datos = try JSONDecoder().decode([Comentario].self, from: publicaciones_recibidas)
+                        
+                        que_hacer_al_recibir(prueba_de_interpretacion_de_datos)
+                    }
+                    else {
+                        print(respuesta)
+                    }
+                } catch {
+                    print("Error")
+                }
+        }.resume()
+    }
 }

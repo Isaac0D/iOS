@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB5E94672CCBEC3C008AAAE0 /* Usuarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5E94662CCBEC3C008AAAE0 /* Usuarios.swift */; };
+		FB5E94692CCBEED0008AAAE0 /* Comentario.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5E94682CCBEED0008AAAE0 /* Comentario.swift */; };
 		FB864DD12CB98054006F1D9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB864DD02CB98054006F1D9F /* AppDelegate.swift */; };
 		FB864DD32CB98054006F1D9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB864DD22CB98054006F1D9F /* SceneDelegate.swift */; };
 		FB864DD52CB98054006F1D9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB864DD42CB98054006F1D9F /* ViewController.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB5E94662CCBEC3C008AAAE0 /* Usuarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuarios.swift; sourceTree = "<group>"; };
+		FB5E94682CCBEED0008AAAE0 /* Comentario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comentario.swift; sourceTree = "<group>"; };
 		FB864DCD2CB98054006F1D9F /* boceto2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boceto2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB864DD02CB98054006F1D9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB864DD22CB98054006F1D9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -176,6 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				FB864E0C2CB981E0006F1D9F /* posts.swift */,
+				FB5E94662CCBEC3C008AAAE0 /* Usuarios.swift */,
+				FB5E94682CCBEED0008AAAE0 /* Comentario.swift */,
 			);
 			path = modelos;
 			sourceTree = "<group>";
@@ -319,9 +325,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB5E94692CCBEED0008AAAE0 /* Comentario.swift in Sources */,
 				FB864E0A2CB981A1006F1D9F /* mod_navegador_principal.swift in Sources */,
 				FB864E022CB980BB006F1D9F /* ControladorPantallaDelPost.swift in Sources */,
 				FB864E072CB98156006F1D9F /* VistaDeZelda.swift in Sources */,
+				FB5E94672CCBEC3C008AAAE0 /* Usuarios.swift in Sources */,
 				FB864DD52CB98054006F1D9F /* ViewController.swift in Sources */,
 				FB864DD12CB98054006F1D9F /* AppDelegate.swift in Sources */,
 				FB864E102CB98218006F1D9F /* provedor_publicaciones.swift in Sources */,

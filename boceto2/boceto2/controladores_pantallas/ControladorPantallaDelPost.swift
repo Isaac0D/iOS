@@ -90,7 +90,6 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
          return celda
      }
      
-
     /*
     // MARK: - Navigation
 
@@ -100,5 +99,4 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

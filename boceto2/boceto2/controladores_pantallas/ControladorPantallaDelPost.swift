@@ -1,6 +1,7 @@
+import Foundation
 import UIKit
 
-class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
+class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     private let identificador_de_celda = "CeldaComentario"
     let proveedor_publicaciones = ProveedorDePublicaciones.autoreferencia
     
@@ -10,6 +11,7 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
     @IBOutlet weak var seccion_comentarios: UICollectionView!
     public var id_publicacion: Int?
     
+    @IBOutlet weak var usuarioComentario: UILabel!
     private var publicacion: Publicacion?
     private var usuario: Usuario?
     private var lista_comentarios: [Comentario] = []
@@ -75,20 +77,28 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
         return lista_comentarios.count
     }
     
+
+    
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-         print("Aqui deberia hacer algo")
-         let celda = collectionView.dequeueReusableCell(withReuseIdentifier: identificador_de_celda, for: indexPath)
-     
-         // Configure the cell
-         celda.tintColor = UIColor.green
-   
-         // print(self.lista_de_publicaciones)
-         
-         return celda
-     }
+        
+        let celda = collectionView.dequeueReusableCell(withReuseIdentifier: identificador_de_celda, for: indexPath) as! VistaDeZelda
+        
+        let comentario = lista_comentarios[indexPath.item]
+
+        celda.usuarioComentario.text = comentario.name
+        celda.comentario.text = comentario.body
+
+        // print(self.lista_de_publicaciones)
+        
+        return celda
+    }
+    
+    
      
     /*
     // MARK: - Navigation

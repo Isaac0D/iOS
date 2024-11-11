@@ -36,24 +36,41 @@
                                 <rect key="frame" x="0.0" y="-31" width="393" height="800"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Eb-nN-jEM">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Eb-nN-jEM">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ksI-Fm-lv6">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="820"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1655.6666666666667"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twentyOnePilotsLogo" translatesAutoresizingMaskIntoConstraints="NO" id="KLr-Kp-YAw">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="320"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="230"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="320" id="ZJQ-J4-h76"/>
+                                                    <constraint firstAttribute="height" constant="230" id="ZJQ-J4-h76"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeClancy" translatesAutoresizingMaskIntoConstraints="NO" id="cq6-Qd-Rsw">
-                                                <rect key="frame" x="0.0" y="320" width="393" height="500"/>
+                                                <rect key="frame" x="0.0" y="230" width="393" height="500"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="500" id="zo8-Tv-3iT"/>
                                                 </constraints>
                                             </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clancyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="soc-xM-IQ7">
+                                                <rect key="frame" x="0.0" y="730" width="393" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="paQ-fF-FiV"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="28" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEz-SG-TSE">
+                                                <rect key="frame" x="0.0" y="1030" width="393" height="625.66666666666652"/>
+                                                <color key="backgroundColor" red="1" green="0.96704340818253565" blue="0.34208566778854077" alpha="0.58999999999999997" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.12156862745098039" green="0.12156862745098039" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus odio elit, molestie eget odio eu, fermentum laoreet felis. Suspendisse potenti. Sed et sagittis purus. Vestibulum erat nisi, dapibus at risus id, lacinia vehicula nulla. Aliquam sit amet sapien mollis dui varius consequat ut eget enim. In hac habitasse platea dictumst. Nunc sodales purus nec lorem mollis, eu fermentum felis pulvinar. Cras interdum magna ullamcorper neque rutrum consequat. Etiam tempus nulla lorem, ut finibus ante tempor vitae. Vestibulum convallis porta aliquet. Duis aliquam, ligula ac venenatis sollicitudin, lectus massa mollis ex, vel cursus sapien lacus feugiat metus.
+
+Curabitur ac dapibus urna, non dignissim metus. Donec tristique odio ac leo porta faucibus. Donec at velit metus. Ut sodales aliquam est. Mauris interdum venenatis cursus. Fusce et risus in nibh posuere interdum. Pellentesque malesuada metus id lacinia pellentesque. Praesent eu ullamcorper ante. Suspendisse sed mauris dapibus, maximus orci eu, semper ante. Sed ligula.</string>
+                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                                <color key="textColor" red="0.12156862745098039" green="0.12156862745098039" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -129,6 +146,7 @@
     <resources>
         <image name="backgroundHomeSection" width="9167" height="9167"/>
         <image name="circle.grid.3x3.fill" catalog="system" width="128" height="111"/>
+        <image name="clancyLogo" width="9167" height="9167"/>
         <image name="homeClancy" width="9167" height="9167"/>
         <image name="timelapse" catalog="system" width="128" height="124"/>
         <image name="twentyOnePilotsLogo" width="9167" height="9167"/>

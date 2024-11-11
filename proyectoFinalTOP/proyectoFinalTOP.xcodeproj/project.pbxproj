@@ -16,6 +16,7 @@
 		FB1D967A2CDBDA3100F189C0 /* proyectoFinalTOPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D96792CDBDA3100F189C0 /* proyectoFinalTOPTests.swift */; };
 		FB1D96842CDBDA3100F189C0 /* proyectoFinalTOPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D96832CDBDA3100F189C0 /* proyectoFinalTOPUITests.swift */; };
 		FB1D96862CDBDA3100F189C0 /* proyectoFinalTOPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D96852CDBDA3100F189C0 /* proyectoFinalTOPUITestsLaunchTests.swift */; };
+		FBF673C32CE27948006DA2DD /* AlfredinoSemimono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBF673C22CE27948006DA2DD /* AlfredinoSemimono.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FB1D967F2CDBDA3100F189C0 /* proyectoFinalTOPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = proyectoFinalTOPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB1D96832CDBDA3100F189C0 /* proyectoFinalTOPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proyectoFinalTOPUITests.swift; sourceTree = "<group>"; };
 		FB1D96852CDBDA3100F189C0 /* proyectoFinalTOPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proyectoFinalTOPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBF673C22CE27948006DA2DD /* AlfredinoSemimono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AlfredinoSemimono.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				FB1D96642CDBDA3100F189C0 /* SceneDelegate.swift */,
 				FB1D96662CDBDA3100F189C0 /* ViewController.swift */,
 				FB1D96682CDBDA3100F189C0 /* Main.storyboard */,
+				FBF673C22CE27948006DA2DD /* AlfredinoSemimono.ttf */,
 				FB1D966B2CDBDA3100F189C0 /* Assets.xcassets */,
 				FB1D966D2CDBDA3100F189C0 /* LaunchScreen.storyboard */,
 				FB1D96702CDBDA3100F189C0 /* Info.plist */,
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBF673C32CE27948006DA2DD /* AlfredinoSemimono.ttf in Resources */,
 				FB1D966C2CDBDA3100F189C0 /* Assets.xcassets in Resources */,
 				FB1D966F2CDBDA3100F189C0 /* Base in Resources */,
 				FB1D966A2CDBDA3100F189C0 /* Base in Resources */,

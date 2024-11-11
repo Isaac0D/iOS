@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HpN-od-pnQ">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Trench-->
+        <scene sceneID="fM5-Jg-8Z2">
+            <objects>
+                <viewController title="Trench" id="b6C-iU-DYc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9wP-c2-gQi">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8tA-CP-wbz"/>
+                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Trench" image="timelapse" catalog="system" id="LAc-VK-loR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HSt-Qv-1lI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1384" y="-144"/>
+        </scene>
+        <!--Inicio-->
+        <scene sceneID="aOG-zD-YXL">
+            <objects>
+                <viewController title="Inicio" id="ZUI-s5-bDp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ebF-e6-rIX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundHomeSection" translatesAutoresizingMaskIntoConstraints="NO" id="ZSq-KJ-Thw">
+                                <rect key="frame" x="0.0" y="-31" width="393" height="800"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Eb-nN-jEM">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ksI-Fm-lv6">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="820"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twentyOnePilotsLogo" translatesAutoresizingMaskIntoConstraints="NO" id="KLr-Kp-YAw">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="320"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="320" id="ZJQ-J4-h76"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeClancy" translatesAutoresizingMaskIntoConstraints="NO" id="cq6-Qd-Rsw">
+                                                <rect key="frame" x="0.0" y="320" width="393" height="500"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="500" id="zo8-Tv-3iT"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ksI-Fm-lv6" firstAttribute="top" secondItem="5Eb-nN-jEM" secondAttribute="top" id="3CG-Zb-QRN"/>
+                                    <constraint firstAttribute="bottom" secondItem="ksI-Fm-lv6" secondAttribute="bottom" id="5W0-kg-cBI"/>
+                                    <constraint firstItem="ksI-Fm-lv6" firstAttribute="width" secondItem="5Eb-nN-jEM" secondAttribute="width" id="5vp-Xq-oMI"/>
+                                    <constraint firstAttribute="trailing" secondItem="ksI-Fm-lv6" secondAttribute="trailing" id="B4a-mq-A8Y"/>
+                                    <constraint firstItem="ksI-Fm-lv6" firstAttribute="leading" secondItem="5Eb-nN-jEM" secondAttribute="leading" id="swi-KU-3yx"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="iwp-za-aKW"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="cpT-qD-b4c"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zZd-CW-mxg"/>
+                        <color key="backgroundColor" white="0.050000000000000003" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Eb-nN-jEM" firstAttribute="top" secondItem="zZd-CW-mxg" secondAttribute="top" id="94a-S0-kRh"/>
+                            <constraint firstItem="5Eb-nN-jEM" firstAttribute="top" secondItem="zZd-CW-mxg" secondAttribute="top" id="HED-zF-e65"/>
+                            <constraint firstItem="zZd-CW-mxg" firstAttribute="bottom" secondItem="5Eb-nN-jEM" secondAttribute="bottom" id="mxI-zK-hsw"/>
+                            <constraint firstItem="zZd-CW-mxg" firstAttribute="trailing" secondItem="5Eb-nN-jEM" secondAttribute="trailing" id="sfV-6y-XRE"/>
+                            <constraint firstItem="5Eb-nN-jEM" firstAttribute="top" secondItem="zZd-CW-mxg" secondAttribute="top" id="wtm-x1-JtP"/>
+                            <constraint firstItem="5Eb-nN-jEM" firstAttribute="leading" secondItem="zZd-CW-mxg" secondAttribute="leading" id="y53-0M-IvJ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Inicio" image="window.vertical.closed" catalog="system" id="Rg0-IZ-aL8" userLabel="Inicio">
+                        <inset key="imageInsets" minX="0.0" minY="12" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yyy-Db-3TZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1383.9694656488548" y="-814.08450704225356"/>
+        </scene>
+        <!--Dema-->
+        <scene sceneID="jho-KO-z5R">
+            <objects>
+                <viewController title="Dema" id="ceV-0R-7fV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hnw-vp-Woa">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="m2L-eX-QM7"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dema" image="circle.grid.3x3.fill" catalog="system" id="Rxl-Zn-SSM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGv-fD-en3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1338" y="514"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2Vc-8K-BMa">
+            <objects>
+                <tabBarController id="HpN-od-pnQ" sceneMemberID="viewController">
+                    <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Gci-2u-001">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="0.1455131086" blue="0.12539737270000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="1" green="0.1455131086" blue="0.12539737270000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="0.80237452008507471" green="0.082312504091288693" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ZUI-s5-bDp" kind="relationship" relationship="viewControllers" id="ulv-6a-bLh"/>
+                        <segue destination="b6C-iU-DYc" kind="relationship" relationship="viewControllers" id="siS-kG-m2m"/>
+                        <segue destination="ceV-0R-7fV" kind="relationship" relationship="viewControllers" id="pFm-Zm-5ax"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Hu-ZH-Qzl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2704" y="-185"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backgroundHomeSection" width="9167" height="9167"/>
+        <image name="circle.grid.3x3.fill" catalog="system" width="128" height="111"/>
+        <image name="homeClancy" width="9167" height="9167"/>
+        <image name="timelapse" catalog="system" width="128" height="124"/>
+        <image name="twentyOnePilotsLogo" width="9167" height="9167"/>
+        <image name="window.vertical.closed" catalog="system" width="128" height="119"/>
+        <systemColor name="systemCyanColor">
+            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

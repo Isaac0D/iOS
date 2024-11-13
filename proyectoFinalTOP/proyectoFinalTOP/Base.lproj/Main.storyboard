@@ -40,7 +40,7 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="710"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ksI-Fm-lv6">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1655.6666666666667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="2023.3333333333333"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twentyOnePilotsLogo" translatesAutoresizingMaskIntoConstraints="NO" id="KLr-Kp-YAw">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="230"/>
@@ -60,18 +60,59 @@
                                                     <constraint firstAttribute="height" constant="300" id="paQ-fF-FiV"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="28" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEz-SG-TSE">
-                                                <rect key="frame" x="0.0" y="1030" width="393" height="625.66666666666652"/>
-                                                <color key="backgroundColor" red="1" green="0.96704340818253565" blue="0.34208566778854077" alpha="0.58999999999999997" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEz-SG-TSE">
+                                                <rect key="frame" x="0.0" y="1030" width="393" height="93.333333333333258"/>
                                                 <color key="tintColor" red="0.12156862745098039" green="0.12156862745098039" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus odio elit, molestie eget odio eu, fermentum laoreet felis. Suspendisse potenti. Sed et sagittis purus. Vestibulum erat nisi, dapibus at risus id, lacinia vehicula nulla. Aliquam sit amet sapien mollis dui varius consequat ut eget enim. In hac habitasse platea dictumst. Nunc sodales purus nec lorem mollis, eu fermentum felis pulvinar. Cras interdum magna ullamcorper neque rutrum consequat. Etiam tempus nulla lorem, ut finibus ante tempor vitae. Vestibulum convallis porta aliquet. Duis aliquam, ligula ac venenatis sollicitudin, lectus massa mollis ex, vel cursus sapien lacus feugiat metus.
-
-Curabitur ac dapibus urna, non dignissim metus. Donec tristique odio ac leo porta faucibus. Donec at velit metus. Ut sodales aliquam est. Mauris interdum venenatis cursus. Fusce et risus in nibh posuere interdum. Pellentesque malesuada metus id lacinia pellentesque. Praesent eu ullamcorper ante. Suspendisse sed mauris dapibus, maximus orci eu, semper ante. Sed ligula.</string>
-                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
-                                                <color key="textColor" red="0.12156862745098039" green="0.12156862745098039" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <string key="content">“I am a citizen. I am an escapee.              I am an exception. I am returning to Trench. I am Clancy.”                                                    -Clancy</string>
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="20" name="BaiJamjuree-SemiBoldItalic"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="25" headIndent="25" tighteningFactorForTruncation="0.0">
+                                                                <lineBreakStrategy key="lineBreakStrategy" pushOut="YES" hangulWordPriority="YES" standard="YES"/>
+                                                            </paragraphStyle>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RuT-yJ-0jD">
+                                                <rect key="frame" x="0.0" y="1123.3333333333333" width="393" height="265.66666666666674"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <string key="content">                                                      Clancy es una persona que vivía en la ciudad de Dema, ubicada en el continente de Trench. Clancy había intentado escapar de la ciudad varias veces, pero siempre era encontrado por uno de los Obispos, su líder Nico, y llevado de regreso a Dema. Después de sus intentos fallidos de escapar de la ciudad, a Clancy se le ocurrió una nueva idea para huir.                       </string>
+                                                        <attributes>
+                                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="21" name="Helvetica"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="28" headIndent="32" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.2274509817" green="0.2274509817" blue="0.2274509817" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clancyInd" translatesAutoresizingMaskIntoConstraints="NO" id="9eZ-EI-9Nk">
+                                                <rect key="frame" x="0.0" y="1389" width="393" height="600"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="600" id="G1I-aA-OGX"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egM-eB-Imo">
+                                                <rect key="frame" x="0.0" y="1989" width="393" height="34.333333333333258"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                            </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="egM-eB-Imo" firstAttribute="leading" secondItem="ksI-Fm-lv6" secondAttribute="leading" id="gzm-jK-Vdg"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -79,8 +120,10 @@ Curabitur ac dapibus urna, non dignissim metus. Donec tristique odio ac leo port
                                     <constraint firstAttribute="bottom" secondItem="ksI-Fm-lv6" secondAttribute="bottom" id="5W0-kg-cBI"/>
                                     <constraint firstItem="ksI-Fm-lv6" firstAttribute="width" secondItem="5Eb-nN-jEM" secondAttribute="width" id="5vp-Xq-oMI"/>
                                     <constraint firstAttribute="trailing" secondItem="ksI-Fm-lv6" secondAttribute="trailing" id="B4a-mq-A8Y"/>
+                                    <constraint firstItem="ksI-Fm-lv6" firstAttribute="width" secondItem="5Eb-nN-jEM" secondAttribute="width" id="o9B-Y4-q57"/>
                                     <constraint firstItem="ksI-Fm-lv6" firstAttribute="leading" secondItem="5Eb-nN-jEM" secondAttribute="leading" id="swi-KU-3yx"/>
                                 </constraints>
+                                <inset key="scrollIndicatorInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="iwp-za-aKW"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="cpT-qD-b4c"/>
                             </scrollView>
@@ -146,6 +189,7 @@ Curabitur ac dapibus urna, non dignissim metus. Donec tristique odio ac leo port
     <resources>
         <image name="backgroundHomeSection" width="9167" height="9167"/>
         <image name="circle.grid.3x3.fill" catalog="system" width="128" height="111"/>
+        <image name="clancyInd" width="736" height="1308"/>
         <image name="clancyLogo" width="9167" height="9167"/>
         <image name="homeClancy" width="9167" height="9167"/>
         <image name="timelapse" catalog="system" width="128" height="124"/>

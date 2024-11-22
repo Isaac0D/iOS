@@ -80,10 +80,6 @@
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banditos" translatesAutoresizingMaskIntoConstraints="NO" id="cI8-Wz-6GP">
-                                                <rect key="frame" x="24" y="1261" width="345" height="160"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hz-zw-Mpu">
                                                 <rect key="frame" x="24" y="1483" width="154" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1030,6 +1026,10 @@
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banditos" translatesAutoresizingMaskIntoConstraints="NO" id="cI8-Wz-6GP">
+                                                <rect key="frame" x="0.0" y="1247" width="393" height="188"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="3000" id="Ca9-vO-1jd"/>
@@ -1061,10 +1061,40 @@
             </objects>
             <point key="canvasLocation" x="-1385.4961832061067" y="-144.36619718309859"/>
         </scene>
-        <!--Inicio-->
+        <!--Lore-->
+        <scene sceneID="3t5-Sj-ceQ">
+            <objects>
+                <viewController title="Lore" id="KJa-Ve-2sS" customClass="ViewControllerVideo" customModule="proyectoFinalTOP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hCG-mE-7Ak">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="historiaBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Oqu-cZ-ei0">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="06d-0Q-UfG">
+                                <rect key="frame" x="0.0" y="140" width="393" height="229"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5cP-Q7-Fd5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Historia" image="books.vertical" catalog="system" id="z9A-82-KIs"/>
+                    <connections>
+                        <outlet property="videoView" destination="06d-0Q-UfG" id="DLY-o4-JtG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tvt-mg-a2t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-257.25190839694653" y="-236.61971830985917"/>
+        </scene>
+        <!--Clancy-->
         <scene sceneID="aOG-zD-YXL">
             <objects>
-                <viewController title="Inicio" id="ZUI-s5-bDp" sceneMemberID="viewController">
+                <viewController title="Clancy" id="ZUI-s5-bDp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ebF-e6-rIX">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1094,7 +1124,7 @@
                                                     <fragment content="“I am a citizen. I am an escapee. I am an exception. I am returning to Trench. I am Clancy.”       ">
                                                         <attributes>
                                                             <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
-                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="NSColor" red="0.99019607843137258" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <font key="NSFont" size="19" name="GillSans-BoldItalic"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
@@ -1241,7 +1271,7 @@
                                                         <string key="content">“Dear Clancy, you are what they said you were. I see weathering on your face, and the journey you've been on. Although we were away, I hope you now know that I've never left you. It's time, Clancy. They believe in the movement.                 Covering you.”       </string>
                                                         <attributes>
                                                             <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
-                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="NSColor" red="0.99019607843137258" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <font key="NSFont" size="19" name="GillSans-SemiBoldItalic"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
@@ -1268,11 +1298,66 @@
                                                 <rect key="frame" x="30" y="2181" width="332" height="185"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <attributedString key="attributedText">
-                                                    <fragment>
-                                                        <string key="content">El bandito también conocido como “Torchbearer” es el líder de este grupo rebelde, es una persona muy misteriosa y tiene el poder de aparecer en otros lugares para guiar a las personas sin necesidad de estar físicamente presente.      </string>
+                                                    <fragment content="El bandito también conocido como ">
                                                         <attributes>
                                                             <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
-                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="NSColor" red="0.99019607843137258" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="19" name="GillSans-SemiBold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="“Torchbearer”">
+                                                        <attributes>
+                                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="NSColor" red="1" green="0.84705882352941175" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="19" name="GillSans-SemiBold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="NSColor" red="0.8666666666666667" green="0.97254901960784312" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="19" name="GillSans-SemiBold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="es el líder de este grupo rebelde, es una persona muy misteriosa y tiene el poder de ">
+                                                        <attributes>
+                                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="NSColor" red="0.99019607843137258" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="19" name="GillSans-SemiBold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="aparecer en otros lugares">
+                                                        <attributes>
+                                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="NSColor" red="1" green="0.84705882352941175" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="19" name="GillSans-SemiBold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" para guiar a las personas sin necesidad de estar ">
+                                                        <attributes>
+                                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="NSColor" red="0.99019607843137258" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="19" name="GillSans-SemiBold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="físicamente presente">
+                                                        <attributes>
+                                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="NSColor" red="1" green="0.84705882352941175" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="19" name="GillSans-SemiBold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=".      ">
+                                                        <attributes>
+                                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="NSColor" red="0.99019607843137258" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <font key="NSFont" size="19" name="GillSans-SemiBold"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
@@ -1310,7 +1395,7 @@
                             <constraint firstItem="ci4-zT-VRw" firstAttribute="leading" secondItem="zZd-CW-mxg" secondAttribute="leading" id="t9a-62-TwI"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Inicio" image="window.vertical.closed" catalog="system" id="Rg0-IZ-aL8" userLabel="Inicio">
+                    <tabBarItem key="tabBarItem" title="Clancy" image="window.vertical.closed" catalog="system" id="Rg0-IZ-aL8" userLabel="Inicio">
                         <inset key="imageInsets" minX="0.0" minY="12" maxX="0.0" maxY="0.0"/>
                     </tabBarItem>
                 </viewController>
@@ -1526,10 +1611,6 @@
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dema2" translatesAutoresizingMaskIntoConstraints="NO" id="3bM-Kb-iPj">
-                                                <rect key="frame" x="30" y="924" width="333" height="152"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMI-tC-vwh">
                                                 <rect key="frame" x="31" y="1134" width="169" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1753,7 +1834,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="obispos" translatesAutoresizingMaskIntoConstraints="NO" id="Ath-iF-sH1">
-                                                <rect key="frame" x="32" y="1517" width="332" height="141"/>
+                                                <rect key="frame" x="0.0" y="1509" width="393" height="156"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUI-9n-gho">
@@ -1772,7 +1853,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCv-CW-hE8">
-                                                <rect key="frame" x="38" y="1797" width="332" height="96"/>
+                                                <rect key="frame" x="30" y="1798" width="334" height="96"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="La religión que se practica en ">
@@ -1857,7 +1938,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mZ-td-GKC">
-                                                <rect key="frame" x="38" y="1895" width="332" height="216"/>
+                                                <rect key="frame" x="31" y="1893" width="332" height="216"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Aquellos que se han comprometido con el ">
@@ -2002,11 +2083,15 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vialism" translatesAutoresizingMaskIntoConstraints="NO" id="Rb1-3d-nsh">
-                                                <rect key="frame" x="38" y="2126" width="332" height="461"/>
+                                                <rect key="frame" x="32" y="2126" width="332" height="461"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="restrictedDema" translatesAutoresizingMaskIntoConstraints="NO" id="2zn-lm-bAb">
                                                 <rect key="frame" x="0.0" y="2623" width="393" height="146"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dema2" translatesAutoresizingMaskIntoConstraints="NO" id="3bM-Kb-iPj">
+                                                <rect key="frame" x="0.0" y="912" width="393" height="177"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                         </subviews>
@@ -2040,11 +2125,11 @@
                             <constraint firstItem="Cm8-HU-gYt" firstAttribute="top" secondItem="Hnw-vp-Woa" secondAttribute="top" id="pfi-iD-B2E"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Dema" image="circle.grid.3x3.fill" catalog="system" id="Rxl-Zn-SSM"/>
+                    <tabBarItem key="tabBarItem" title="Dema" image="circle.grid.3x3" catalog="system" id="Rxl-Zn-SSM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eGv-fD-en3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1385.4961832061067" y="511.97183098591552"/>
+            <point key="canvasLocation" x="-1338" y="596"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2Vc-8K-BMa">
@@ -2062,145 +2147,24 @@
                         <segue destination="ZUI-s5-bDp" kind="relationship" relationship="viewControllers" id="ulv-6a-bLh"/>
                         <segue destination="b6C-iU-DYc" kind="relationship" relationship="viewControllers" id="siS-kG-m2m"/>
                         <segue destination="ceV-0R-7fV" kind="relationship" relationship="viewControllers" id="pFm-Zm-5ax"/>
+                        <segue destination="KJa-Ve-2sS" kind="relationship" relationship="viewControllers" id="pCB-Hx-T6E"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Hu-ZH-Qzl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2704" y="-185"/>
         </scene>
-        <!--Inicio-->
-        <scene sceneID="PQ1-g5-eaG">
-            <objects>
-                <viewController title="Inicio" id="cwm-Za-U67" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gQM-Zt-Js0">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundHomeSection" translatesAutoresizingMaskIntoConstraints="NO" id="gxc-OD-9pV">
-                                <rect key="frame" x="0.0" y="-31" width="393" height="800"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fy4-Ki-WTA">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OF5-IF-4cR">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1793.3333333333333"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twentyOnePilotsLogo" translatesAutoresizingMaskIntoConstraints="NO" id="cpn-Ub-uMj">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="230"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="230" id="zhv-dX-6Ws"/>
-                                                </constraints>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeClancy" translatesAutoresizingMaskIntoConstraints="NO" id="iwS-FB-AHQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="500"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="500" id="ooq-45-ljK"/>
-                                                </constraints>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clancyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="pKf-uT-1bd">
-                                                <rect key="frame" x="0.0" y="500" width="393" height="300"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="300" id="wL7-c6-gYb"/>
-                                                </constraints>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0F-A1-qvq">
-                                                <rect key="frame" x="0.0" y="800" width="393" height="93.333333333333371"/>
-                                                <color key="tintColor" red="0.1215686275" green="0.1215686275" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment>
-                                                        <string key="content">“I am a citizen. I am an escapee.              I am an exception. I am returning to Trench. I am Clancy.”                                                    -Clancy</string>
-                                                        <attributes>
-                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                            <font key="NSFont" size="20" name="BaiJamjuree-SemiBoldItalic"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="25" headIndent="25" tighteningFactorForTruncation="0.0">
-                                                                <lineBreakStrategy key="lineBreakStrategy" pushOut="YES" hangulWordPriority="YES" standard="YES"/>
-                                                            </paragraphStyle>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JlC-vP-CWK">
-                                                <rect key="frame" x="0.0" y="893.33333333333337" width="393" height="265.66666666666663"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment>
-                                                        <string key="content">                                                      Clancy es una persona que vivía en la ciudad de Dema, ubicada en el continente de Trench. Clancy había intentado escapar de la ciudad varias veces, pero siempre era encontrado por uno de los Obispos, su líder Nico, y llevado de regreso a Dema. Después de sus intentos fallidos de escapar de la ciudad, a Clancy se le ocurrió una nueva idea para huir.                       </string>
-                                                        <attributes>
-                                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                            <font key="NSFont" size="21" name="Helvetica"/>
-                                                            <real key="NSKern" value="0.0"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="28" headIndent="32" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                                <tabStops/>
-                                                            </paragraphStyle>
-                                                            <color key="NSStrokeColor" red="0.2274509817" green="0.2274509817" blue="0.2274509817" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <real key="NSStrokeWidth" value="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clancyInd" translatesAutoresizingMaskIntoConstraints="NO" id="ioN-vR-SI4">
-                                                <rect key="frame" x="0.0" y="1159" width="393" height="600"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="600" id="YgS-1z-D9d"/>
-                                                </constraints>
-                                            </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cb3-LX-gBg">
-                                                <rect key="frame" x="0.0" y="1759" width="393" height="34.333333333333258"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="cb3-LX-gBg" firstAttribute="leading" secondItem="OF5-IF-4cR" secondAttribute="leading" id="49p-oM-PNU"/>
-                                        </constraints>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="OF5-IF-4cR" firstAttribute="width" secondItem="fy4-Ki-WTA" secondAttribute="width" id="7Mq-vj-TJU"/>
-                                    <constraint firstItem="OF5-IF-4cR" firstAttribute="leading" secondItem="fy4-Ki-WTA" secondAttribute="leading" id="7iU-b8-6Kn"/>
-                                    <constraint firstItem="OF5-IF-4cR" firstAttribute="top" secondItem="fy4-Ki-WTA" secondAttribute="top" id="bjX-2X-RwI"/>
-                                    <constraint firstAttribute="trailing" secondItem="OF5-IF-4cR" secondAttribute="trailing" id="dbb-0S-2sJ"/>
-                                    <constraint firstItem="OF5-IF-4cR" firstAttribute="width" secondItem="fy4-Ki-WTA" secondAttribute="width" id="wY9-yT-eHk"/>
-                                    <constraint firstAttribute="bottom" secondItem="OF5-IF-4cR" secondAttribute="bottom" id="wyG-8P-R3u"/>
-                                </constraints>
-                                <inset key="scrollIndicatorInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="OOu-jU-vzY"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="D7F-l1-LjO"/>
-                            </scrollView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="1sf-Ub-njZ"/>
-                        <color key="backgroundColor" white="0.050000000000000003" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="1sf-Ub-njZ" firstAttribute="bottom" secondItem="fy4-Ki-WTA" secondAttribute="bottom" id="4sp-xI-5ri"/>
-                            <constraint firstItem="fy4-Ki-WTA" firstAttribute="leading" secondItem="1sf-Ub-njZ" secondAttribute="leading" id="ISM-EM-qm0"/>
-                            <constraint firstItem="fy4-Ki-WTA" firstAttribute="top" secondItem="1sf-Ub-njZ" secondAttribute="top" id="PZd-NZ-Mkc"/>
-                            <constraint firstItem="fy4-Ki-WTA" firstAttribute="top" secondItem="1sf-Ub-njZ" secondAttribute="top" id="SWr-Wj-uOg"/>
-                            <constraint firstItem="fy4-Ki-WTA" firstAttribute="top" secondItem="1sf-Ub-njZ" secondAttribute="top" id="r1f-CV-PLC"/>
-                            <constraint firstItem="1sf-Ub-njZ" firstAttribute="trailing" secondItem="fy4-Ki-WTA" secondAttribute="trailing" id="tdk-oz-kjx"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Inicio" image="window.vertical.closed" catalog="system" id="HvZ-Z5-wLd" userLabel="Inicio">
-                        <inset key="imageInsets" minX="0.0" minY="12" maxX="0.0" maxY="0.0"/>
-                    </tabBarItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="miQ-rX-wLI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-416" y="-792"/>
-        </scene>
     </scenes>
     <resources>
         <image name="backgroundHomeSection" width="9167" height="9167"/>
         <image name="banditos" width="1366" height="591"/>
-        <image name="circle.grid.3x3.fill" catalog="system" width="128" height="111"/>
+        <image name="books.vertical" catalog="system" width="128" height="107"/>
+        <image name="circle.grid.3x3" catalog="system" width="128" height="110"/>
         <image name="clancyInd" width="736" height="1308"/>
-        <image name="clancyLogo" width="9167" height="9167"/>
         <image name="dema" width="1500" height="1343"/>
         <image name="dema2" width="1366" height="606"/>
         <image name="demaBackground" width="720" height="1280"/>
+        <image name="historiaBackground" width="9167" height="9167"/>
         <image name="homeClancy" width="9167" height="9167"/>
         <image name="ned" width="441" height="565"/>
         <image name="obispos" width="1366" height="540"/>
@@ -2215,8 +2179,11 @@
         <image name="vialism" width="2096" height="2916"/>
         <image name="voldsoy" width="720" height="1280"/>
         <image name="window.vertical.closed" catalog="system" width="128" height="119"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

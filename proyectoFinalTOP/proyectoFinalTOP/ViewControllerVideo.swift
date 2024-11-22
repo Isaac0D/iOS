@@ -13,6 +13,9 @@ class ViewControllerVideo: UIViewController {
     
     @IBOutlet weak var videoView: UIView!
     
+    @IBOutlet weak var botonIrCartas: UIButton!
+    
+    
     var player : AVPlayer!
     var avpController = AVPlayerViewController()
     
@@ -23,16 +26,40 @@ class ViewControllerVideo: UIViewController {
     }
     
     func startVideo(){
-        let url = URL(string: "https://firebasestorage.googleapis.com/v0/b/gameofchats-762ca.appspot.com/o/message_movies%2F12323439-9729-4941-BA07-2BAE970967C7.mov?alt=media&token=3e37a093-3bc8-410f-84d3-38332af9c726")
         
+        let videoURL = URL(fileURLWithPath: Bundle.main.path(forResource: "IAmClancy", ofType: "mp4")!)
+        player = AVPlayer(url: videoURL)
         
-        player = AVPlayer(url: url!)
-        
+        // Configurar el AVPlayerViewController
         avpController.player = player
-        avpController.view.frame.size.height = videoView.frame.size.height
-        avpController.view.frame.size.width = videoView.frame.size.width
-        self.videoView.addSubview(avpController.view)
+        
+        // Ajustar el tamaño del AVPlayerViewController para que se ajuste a tu UIView
+        avpController.view.frame = videoView.bounds
+        
+        // Agregar el AVPlayerViewController como hijo del controlador actual
+        addChild(avpController)
+        
+        // Agregar la vista del AVPlayerViewController como subvista de tu UIView
+        videoView.addSubview(avpController.view)
+        
+        // Notificar al AVPlayerViewController que ha sido agregado
+        avpController.didMove(toParent: self)
+        
         player.play()
     }
+    
+    @IBAction func irAPaginaCartas() {
+            // URL que deseas abrir en el navegador
+            if let url = URL(string: "http://dmaorg.info/found/15398642_14/clancy.html") {
+                // Verifica si la URL es válida
+                if UIApplication.shared.canOpenURL(url) {
+                    // Abre la URL en Safari
+                    UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                } else {
+                    // Si no se puede abrir la URL, muestra un mensaje de error o realiza alguna acción
+                    print("La URL no es válida.")
+                }
+            }
+        }
 
 }

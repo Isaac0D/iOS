@@ -472,7 +472,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = N5D285NM8X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = proyectoFinalTOP/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = dmaorg.info;
@@ -505,7 +505,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = N5D285NM8X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = proyectoFinalTOP/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = dmaorg.info;

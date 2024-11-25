@@ -1254,6 +1254,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Cronología Completa">
                                                     <fontDescription key="titleFontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="z89-Ya-3Bj" kind="show" id="gou-ys-s5H"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4IE-d3-5EO">
                                                 <rect key="frame" x="24" y="1854" width="234" height="34"/>
@@ -1409,6 +1412,199 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yyy-Db-3TZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1383.9694656488548" y="-814.08450704225356"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="c46-LF-n8B">
+            <objects>
+                <viewController id="z89-Ya-3Bj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vTS-f7-gt2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cronologiaBack" translatesAutoresizingMaskIntoConstraints="NO" id="F8l-g6-UC6">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L1p-qj-Jxu">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjw-59-OOy" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="4600"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvD-GO-SNB">
+                                                <rect key="frame" x="36" y="76" width="331" height="256"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <string key="content">Clancy era una persona que vivía en la ciudad de Dema, ubicada en el continente de Trench. Clancy había logrado escapar de la ciudad en varias ocasiones, pero siempre era encontrado por uno de los Obispos, su líder Nico, y regresado a Dema. Después de sus intentos fallidos de escapar de la ciudad, Clancy ideó una nueva manera de huir.</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99009900990099009" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="19" name="GillSans-SemiBold"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="33" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggn-4F-bU1">
+                                                <rect key="frame" x="36" y="340" width="331" height="777"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <mutableString key="content">Clancy convenció a Nico de llevarlo fuera de los muros de Dema. Condujeron fuera de las murallas, y el coche en el que iban comenzó a desmoronarse, creando una distracción en llamas que permitió a Clancy escapar. Comenzó a vagar y, eventualmente, llegó a un valle. Luego se despierta, habiendo quedado débil por tanto vagar. Mira a su alrededor, observando a personas con atuendos con cinta amarilla mirándolo desde los acantilados. Sigue caminando por el valle, mientras Nico lo persigue a caballo, montado en un caballo blanco. Finalmente, Nico alcanza a Clancy y le unta pintura negra en el cuello. Smearing es una técnica utilizada por los Obispos para crear un estado sumiso y atontado en la persona. Mientras Nico guía a Clancy de vuelta a Dema, las personas en el acantilado comienzan a arrojar pétalos amarillos sobre Nico y Clancy, desorientando el caballo de Nico y liberando momentáneamente a Clancy de su trance. Con el caballo de Nico desorientado, Clancy intenta aprovechar el momento para escapar, pero tropieza, y Nico logra recuperar el control de su caballo y atrapar a Clancy de nuevo, arrastrándolo de vuelta a Dema.</mutableString>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99009900990099009" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="19" name="GillSans-SemiBold"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="23" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eG-V9-ui0">
+                                                <rect key="frame" x="36" y="1107" width="331" height="488"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <string key="content">Clancy, ahora de vuelta en Dema, planea otra manera de escapar. Sin que él lo sepa, un grupo se está infiltrando en Dema para rescatarlo: los Banditos, un grupo de rebeldes que busca liberar Dema. Clancy comienza a escapar, y es abordado por los Banditos y el Portador de la Antorcha. El Portador de la Antorcha logra sacar a Clancy de Dema con éxito y se dirigen a un campamento Bandito. Lamentablemente, los Obispos los habían y comienzan a buscar a Clancy.
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99009900990099009" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="19" name="GillSans-SemiBold"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">Una vez en el campamento Bandito, lo hacen uno de ellos. Primero le rapan la cabeza, luego le ponen cinta amarilla en la ropa. Un Obispo encuentra a Clancy y lo arrastra de vuelta a Dema.</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99009900990099009" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="19" name="GillSans-SemiBold"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="59" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlK-fd-pQy">
+                                                <rect key="frame" x="36" y="1558" width="331" height="1360"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <mutableString key="content">Después de estos intentos de escape, Clancy se hizo muy conocido dentro de los muros de Dema, lo cual no agradó en absoluto a los Obispos. Ellos idearon un plan y obligaron a Clancy a escribir un álbum, el cual serviría como propaganda de Dema. Él y el Portador de la Antorcha también fueron forzados a realizar presentaciones para los ciudadanos de Dema. Una de las actuaciones los vio a Clancy y al Portador de la Antorcha interpretando la canción "Saturday" en un submarino. Durante la actuación, el submarino fue atacado por una criatura llamada "Trash", y los pasajeros tuvieron que escapar del submarino dañado.
+Clancy y el Portador de la Antorcha fueron arrastrados por el agua y se encontraron en la orilla de una isla llamada Voldsøy. Exploraron la isla, donde encontraron una pequeña criatura blanca con astas. La siguieron dentro de una cueva, y descubrieron que en realidad era una de varias criaturas. Clancy siguió a una de ellas afuera, hacia una playa, y esta le dio sus astas, señalándole que las pusiera en su cabeza. Clancy hizo lo que le indicó, y obtuvo la habilidad de "capturar". Capturar es la capacidad de tomar control de cualquier entidad y manejarla a voluntad del usuario. Sin embargo, es notable porque los ojos del "vessel" (entidad controlada) adquieren un tinte amarillo.
+De vuelta en Dema, se reveló que la criatura que atacó el submarino estaba siendo controlada por el Obispo llamado Keons, usando las mismas astas que Clancy ahora poseía. Como castigo por permitir que Clancy y el Portador de la Antorcha escaparan, el resto de los Obispos apuñaló a Keons hasta la muerte. Clancy luego usó su nueva habilidad para tomar control del cuerpo muerto de Keons, derribando una lámpara y provocando un incendio. El hecho de que Keons derribara la lámpara es una referencia a cómo ahora el número de Obispos es ocho, ya que Keons está muerto.
+Finalmente, Clancy dejó de usar su poder de "capturar", y él y el Portador de la Antorcha se dirigieron a la orilla de Voldsøy, donde miraron a través del Estrecho de Paladín, avistando fuegos a lo lejos.</mutableString>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99009900990099009" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="19" name="GillSans-SemiBold"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="24" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKy-Ac-G2k">
+                                                <rect key="frame" x="36" y="2944" width="331" height="583"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <mutableString key="content">Clancy y el Portador de la Antorcha finalmente han regresado a Dema, donde secretamente tocan una canción dentro de un local para los ciudadanos. Luego, Clancy comienza a compartir sus muchas cartas con los ciudadanos. Mientras continúan su actuación, Clancy se desmaya, y los ciudadanos le quitan su nueva máscara, revelando que Clancy estaba controlando a un "vessel", y que él y el Portador de la Antorcha han cruzado el Estrecho de Paladín.
+
+Un pequeño grupo de Banditos se acerca a ellos y los escolta a través de Trench hasta un campo. Al otro lado del campo, Clancy ve al Portador de la Antorcha. Se revela que el Portador de la Antorcha que seguía a Clancy nunca fue real, sino que estaba guiándolo. Finalmente se reúnen de nuevo, y el Portador de la Antorcha le entrega a Clancy su máscara.</mutableString>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99009900990099009" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="19" name="GillSans-SemiBold"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="35" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faC-jQ-eAN">
+                                                <rect key="frame" x="36" y="3535" width="331" height="831"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <mutableString key="content">Clancy, el Portador de la Antorcha y los Banditos ahora se preparan para dirigirse a Dema y enfrentarse a los Obispos. Clancy afila las astas, y es abordado por el Portador de la Antorcha y algunos Banditos, quienes le entregan un cofre que contiene su vestimenta completa y un mapa de Dema. Clancy, el Portador de la Antorcha y los Banditos comienzan su marcha hacia Dema, y los Obispos, usando buitres para espiarlos, saben que están a punto de llegar. Utilizan un poder para controlar a varios "vessels" y enfrentarse al ejército de los Banditos.
+Mientras los Banditos y los zombis luchan, Clancy se infiltra en Dema, corriendo por los túneles bajo la ciudad, y subiendo a la cima de una de las torres de Dema, donde se enfrenta cara a cara con todos los Obispos, excepto con Nico. Utiliza las astas para incapacitar a todos los Obispos, pero es tomado por sorpresa por Nico, quien corre hacia Clancy y le unta pintura negra.
+Nico luego le dice a Clancy: "Tan pocos, tan orgullosos, tan... emocionales." Con una breve pausa de silencio, luego añade: "Hola, Clancy." Clancy abre los ojos al ver a Nico, y en ese momento el video se corta a negro, dejando la historia en un cliffhanger, sin revelar qué sucede después.</mutableString>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99009900990099009" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="19" name="GillSans-SemiBold"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clancyhorizontal" translatesAutoresizingMaskIntoConstraints="NO" id="0fk-O4-zXE">
+                                                <rect key="frame" x="36" y="4416" width="331" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="4600" id="bXX-F6-oOE"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cjw-59-OOy" firstAttribute="bottom" secondItem="xdU-lM-lQA" secondAttribute="bottom" id="MSd-MO-gsR"/>
+                                    <constraint firstItem="cjw-59-OOy" firstAttribute="width" secondItem="xdU-lM-lQA" secondAttribute="width" id="YlZ-9j-g7O"/>
+                                    <constraint firstItem="cjw-59-OOy" firstAttribute="leading" secondItem="xdU-lM-lQA" secondAttribute="leading" id="dwh-QZ-Oxe"/>
+                                    <constraint firstItem="cjw-59-OOy" firstAttribute="trailing" secondItem="xdU-lM-lQA" secondAttribute="trailing" id="eTz-2I-B3L"/>
+                                    <constraint firstItem="cjw-59-OOy" firstAttribute="centerX" secondItem="L1p-qj-Jxu" secondAttribute="centerX" id="eyi-q8-xcZ"/>
+                                    <constraint firstItem="cjw-59-OOy" firstAttribute="top" secondItem="xdU-lM-lQA" secondAttribute="top" id="q2J-vQ-O6F"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="xdU-lM-lQA"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="I8k-b0-cBo"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dW6-Zv-sFA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="L1p-qj-Jxu" firstAttribute="top" secondItem="F8l-g6-UC6" secondAttribute="top" id="EmA-27-9kA"/>
+                            <constraint firstItem="L1p-qj-Jxu" firstAttribute="top" secondItem="dW6-Zv-sFA" secondAttribute="top" id="NOC-we-1Hs"/>
+                            <constraint firstItem="L1p-qj-Jxu" firstAttribute="leading" secondItem="F8l-g6-UC6" secondAttribute="leading" id="P7w-LB-j5P"/>
+                            <constraint firstItem="dW6-Zv-sFA" firstAttribute="trailing" secondItem="L1p-qj-Jxu" secondAttribute="trailing" id="RRa-NZ-V7o"/>
+                            <constraint firstItem="L1p-qj-Jxu" firstAttribute="leading" secondItem="dW6-Zv-sFA" secondAttribute="leading" id="kVJ-SD-sAq"/>
+                            <constraint firstItem="L1p-qj-Jxu" firstAttribute="trailing" secondItem="F8l-g6-UC6" secondAttribute="trailing" id="xjH-gW-uFj"/>
+                            <constraint firstItem="dW6-Zv-sFA" firstAttribute="bottom" secondItem="L1p-qj-Jxu" secondAttribute="bottom" id="xtq-Mn-SWW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wrd-GK-IkX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jJ7-rf-9ah" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-194.6564885496183" y="-975.35211267605644"/>
         </scene>
         <!--Dema-->
         <scene sceneID="jho-KO-z5R">
@@ -2168,6 +2364,8 @@
         <image name="books.vertical" catalog="system" width="128" height="107"/>
         <image name="circle.grid.3x3" catalog="system" width="128" height="110"/>
         <image name="clancyInd" width="736" height="1308"/>
+        <image name="clancyhorizontal" width="9601" height="2422"/>
+        <image name="cronologiaBack" width="1200" height="2133"/>
         <image name="dema" width="1500" height="1343"/>
         <image name="dema2" width="1366" height="606"/>
         <image name="demaBackground" width="720" height="1280"/>
